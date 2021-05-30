@@ -1,10 +1,23 @@
 import './App.css';
+import styled from "styled-components";
+import { ObjectDetector } from "./components/objectDetector";
+
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c2127;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+`;
 
 function App() {
   return (
-    <div className="app-container">
-     Hello World!
-    </div>
+  <AppContainer>
+      <ObjectDetector />
+  </AppContainer>
   );
 }
 
